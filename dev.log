@@ -1,0 +1,257 @@
+﻿
+> dev
+> vite dev --port 3000
+
+
+  [32m[1mVITE[22m v8.3.8[39m  [2mready in [0m[1m1468[22m[2m[0m ms[22m
+
+  [32mΓ₧£[39m  [1mLocal[22m:   [36mhttp://localhost:[1m3000[22m/[39m
+[2m  [32mΓ₧£[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+node.exe : [2m2026-11-17T03:44:27.252Z[0m [33mWARN[0m [1m[Better Auth]:[0m [better-auth] Base URL is not set. 
+Set the baseURL option or BETTER_AUTH_URL env, or use a dynamic baseURL with allowedHosts for multi-host setups. 
+Without it the origin is derived from the incoming request, and callbacks and redirects may not work correctly.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([2m2026-11-17T...work correctly.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[2m10.47.14[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles.css?direct[22m
+[Client] [vite] css hot updated: /src/styles.css
+[2m10.47.40[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles.css?direct[22m
+[Client] [vite] css hot updated: /src/styles.css
+[Client] [vite] css hot updated: /src/styles.css
+[2m10.48.12[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mReact has detected a 
+change in the order of Hooks called by EditProduct. This will lead to bugs and errors if not fixed. For more 
+information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+1. useContext                 useContext
+2. useContext                 useContext
+3. useRef                     useRef
+4. useCallback                useCallback
+5. useCallback                useCallback
+6. useRef                     useRef
+7. useMemo                    useMemo
+8. useSyncExternalStore       useSyncExternalStore
+9. useEffect                  useEffect
+10. useDebugValue             useDebugValue
+11. useContext                useContext
+12. useContext                useContext
+13. useCallback               useCallback
+14. useContext                useContext
+15. useCallback               useCallback
+16. useState                  useState
+17. useState                  useState
+18. useContext                useContext
+19. useContext                useContext
+20. useContext                useContext
+21. useEffect                 useEffect
+22. useState                  useState
+23. useCallback               useCallback
+24. useSyncExternalStore      useSyncExternalStore
+25. useEffect                 useEffect
+26. undefined                 useId
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+[2m10.48.12[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError: Rendered more 
+hooks than during the previous render.
+    at updateWorkInProgressHook (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:4514:12)
+    at Object.useId (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:14601:12)
+    at exports.useId (http://localhost:3000/node_modules/.vite/deps/react-4hkZzRew.js?v=f44e7dee:743:31)
+    at useForm (http://localhost:3000/node_modules/.vite/deps/@tanstack_react-form.js?v=5a455c7c:3426:25)
+    at EditProduct (http://localhost:3000/src/routes/products/$productId.tsx?tsr-split=component:87:15)
+    at Object.react_stack_bottom_frame 
+(http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:14140:12)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:4398:19)
+    at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:5773:16)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:6389:20)
+    at runWithFiberInDEV (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:942:66)
+
+The above error occurred in the <EditProduct> component.
+
+React will try to recreate this component tree from scratch using the error boundary you provided, CatchBoundary.
+
+[2m10.48.12[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mWarning: The following 
+error wasn't caught by any route! At the very least, consider setting an 'errorComponent' in your RootRoute!
+[2m10.48.12[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mWarning: Error: 
+Rendered more hooks than during the previous render.
+    at updateWorkInProgressHook (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:4514:12)
+    at Object.useId (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:14601:12)
+    at exports.useId (http://localhost:3000/node_modules/.vite/deps/react-4hkZzRew.js?v=f44e7dee:743:31)
+    at useForm (http://localhost:3000/node_modules/.vite/deps/@tanstack_react-form.js?v=5a455c7c:3426:25)
+    at EditProduct (http://localhost:3000/src/routes/products/$productId.tsx?tsr-split=component:87:15)
+    at Object.react_stack_bottom_frame 
+(http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:14140:12)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:4398:19)
+    at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:5773:16)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:6389:20)
+    at runWithFiberInDEV (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:942:66)
+[Client] React has detected a change in the order of Hooks called by %s. This will lead to bugs and errors if not 
+fixed. For more information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+%s   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ EditProduct 1. useContext                 useContext
+2. useContext                 useContext
+3. useRef                     useRef
+4. useCallback                useCallback
+5. useCallback                useCallback
+6. useRef                     useRef
+7. useMemo                    useMemo
+8. useSyncExternalStore       useSyncExternalStore
+9. useEffect                  useEffect
+10. useDebugValue             useDebugValue
+11. useContext                useContext
+12. useContext                useContext
+13. useCallback               useCallback
+14. useContext                useContext
+15. useCallback               useCallback
+16. useState                  useState
+17. useState                  useState
+18. useContext                useContext
+19. useContext                useContext
+20. useContext                useContext
+21. useEffect                 useEffect
+22. useState                  useState
+23. useCallback               useCallback
+24. useSyncExternalStore      useSyncExternalStore
+25. useEffect                 useEffect
+26. undefined                 useId
+
+[Client] %o
+
+%s
+
+%s
+ {
+  name: 'Error',
+  message: 'Rendered more hooks than during the previous render.',
+  stack: 'Error: Rendered more hooks than during the previous render.\n' +
+    '    at updateWorkInProgressHook 
+(http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:4514:12)\n' +
+    '    at Object.useId (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:14601:12)\n' +
+    '    at exports.useId (http://localhost:3000/node_modules/.vite/deps/react-4hkZzRew.js?v=f44e7dee:743:31)\n' +
+    '    at useForm (http://localhost:3000/node_modules/.vite/deps/@tanstack_react-form.js?v=5a455c7c:3426:25)\n' +
+    '    at EditProduct (http://localhost:3000/src/routes/products/$productId.tsx?tsr-split=component:87:15)\n' +
+    '    at Object.react_stack_bottom_frame 
+(http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:14140:12)\n' +
+    '    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:4398:19)\n' +
+    '    at updateFunctionComponent 
+(http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:5773:16)\n' +
+    '    at beginWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:6389:20)\n' +
+    '    at runWithFiberInDEV (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:942:66)'
+} The above error occurred in the <EditProduct> component. React will try to recreate this component tree from scratch 
+using the error boundary you provided, CatchBoundary.
+[Client] Warning: The following error wasn't caught by any route! At the very least, consider setting an 
+'errorComponent' in your RootRoute!
+[Client] Warning: {
+  name: 'Error',
+  message: 'Rendered more hooks than during the previous render.',
+  stack: 'Error: Rendered more hooks than during the previous render.\n' +
+    '    at updateWorkInProgressHook 
+(http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:4514:12)\n' +
+    '    at Object.useId (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:14601:12)\n' +
+    '    at exports.useId (http://localhost:3000/node_modules/.vite/deps/react-4hkZzRew.js?v=f44e7dee:743:31)\n' +
+    '    at useForm (http://localhost:3000/node_modules/.vite/deps/@tanstack_react-form.js?v=5a455c7c:3426:25)\n' +
+    '    at EditProduct (http://localhost:3000/src/routes/products/$productId.tsx?tsr-split=component:87:15)\n' +
+    '    at Object.react_stack_bottom_frame 
+(http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:14140:12)\n' +
+    '    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:4398:19)\n' +
+    '    at updateFunctionComponent 
+(http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:5773:16)\n' +
+    '    at beginWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:6389:20)\n' +
+    '    at runWithFiberInDEV (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=d79f3d25:942:66)'
+}
+[2m10.50.31[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/routes/setup.tsx?tsr-split=component, /src/routes/dashboard.tsx, /src/routes/products/$productId.tsx, /src/routes/users/index.tsx, /src/routes/products/new.tsx, /src/routes/products/index.tsx, /src/routes/users/$userId.tsx, /src/styles.css?direct[22m
+[2m10.50.31[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/lib/server/auth.ts[22m
+[Client] [vite] css hot updated: /src/styles.css
+[Client] [vite] hot updated: /src/routes/dashboard.tsx
+[Client] [vite] hot updated: /src/routes/products/$productId.tsx
+[Client] [vite] hot updated: /src/routes/users/index.tsx
+[Client] [vite] hot updated: /src/routes/products/new.tsx
+[Client] [vite] hot updated: /src/routes/products/index.tsx
+[Client] [vite] hot updated: /src/routes/users/$userId.tsx
+[Client] [vite] css hot updated: /src/styles.css
+[Client] [vite] hot updated: /src/routes/dashboard.tsx
+[Client] [vite] hot updated: /src/routes/products/$productId.tsx
+[Client] [vite] hot updated: /src/routes/users/index.tsx
+[Client] [vite] hot updated: /src/routes/products/new.tsx
+[Client] [vite] hot updated: /src/routes/products/index.tsx
+[Client] [vite] hot updated: /src/routes/users/$userId.tsx
+[Client] [vite] css hot updated: /src/styles.css
+[Client] [vite] hot updated: /src/routes/dashboard.tsx
+[Client] [vite] hot updated: /src/routes/products/$productId.tsx
+[Client] [vite] hot updated: /src/routes/users/index.tsx
+[Client] [vite] hot updated: /src/routes/products/new.tsx
+[Client] [vite] hot updated: /src/routes/products/index.tsx
+[Client] [vite] hot updated: /src/routes/users/$userId.tsx
+[2m2026-11-17T03:50:32.252Z[0m [33mWARN[0m [1m[Better Auth]:[0m [better-auth] Base URL is not set. Set the 
+baseURL option or BETTER_AUTH_URL env, or use a dynamic baseURL with allowedHosts for multi-host setups. Without it 
+the origin is derived from the incoming request, and callbacks and redirects may not work correctly.
+[2m10.50.32[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Server] 
+2026-11-17T03:50:32.252Z WARN [Better Auth]: [better-auth] Base URL is not set. Set the baseURL option or 
+BETTER_AUTH_URL env, or use a dynamic baseURL with allowedHosts for multi-host setups. Without it the origin is 
+derived from the incoming request, and callbacks and redirects may not work correctly.
+[2m10.50.32[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Server] 
+2026-11-17T03:50:32.252Z WARN [Better Auth]: [better-auth] Base URL is not set. Set the baseURL option or 
+BETTER_AUTH_URL env, or use a dynamic baseURL with allowedHosts for multi-host setups. Without it the origin is 
+derived from the incoming request, and callbacks and redirects may not work correctly.
+[2m10.50.32[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Server] 
+2026-11-17T03:50:32.252Z WARN [Better Auth]: [better-auth] Base URL is not set. Set the baseURL option or 
+BETTER_AUTH_URL env, or use a dynamic baseURL with allowedHosts for multi-host setups. Without it the origin is 
+derived from the incoming request, and callbacks and redirects may not work correctly.
+[2m10.50.32[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mEncountered a script 
+tag while rendering React component. Scripts inside React components are never executed when rendering on the client. 
+Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template).
+[Client] Encountered a script tag while rendering React component. Scripts inside React components are never executed 
+when rendering on the client. Consider using template tag instead 
+(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template).
+[2m10.50.41[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/routes/products/new.tsx?tsr-split=component, /src/routes/products/index.tsx?tsr-split=component, /src/routes/products/$productId.tsx?tsr-split=component, /src/styles.css?direct[22m
+[2m10.50.41[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/lib/server/products.ts[22m
+[Client] [vite] css hot updated: /src/styles.css
+[2m2026-11-17T03:50:41.974Z[0m [33mWARN[0m [1m[Better Auth]:[0m [better-auth] Base URL is not set. Set the 
+baseURL option or BETTER_AUTH_URL env, or use a dynamic baseURL with allowedHosts for multi-host setups. Without it 
+the origin is derived from the incoming request, and callbacks and redirects may not work correctly.
+[Client] [vite] hot updated: /src/routes/products/$productId.tsx?tsr-split=component
+[2m10.50.42[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Server] 
+2026-11-17T03:50:41.974Z WARN [Better Auth]: [better-auth] Base URL is not set. Set the baseURL option or 
+BETTER_AUTH_URL env, or use a dynamic baseURL with allowedHosts for multi-host setups. Without it the origin is 
+derived from the incoming request, and callbacks and redirects may not work correctly.
+[2m10.50.42[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Server] 
+2026-11-17T03:50:41.974Z WARN [Better Auth]: [better-auth] Base URL is not set. Set the baseURL option or 
+BETTER_AUTH_URL env, or use a dynamic baseURL with allowedHosts for multi-host setups. Without it the origin is 
+derived from the incoming request, and callbacks and redirects may not work correctly.
+[2m10.50.42[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Server] 
+2026-11-17T03:50:41.974Z WARN [Better Auth]: [better-auth] Base URL is not set. Set the baseURL option or 
+BETTER_AUTH_URL env, or use a dynamic baseURL with allowedHosts for multi-host setups. Without it the origin is 
+derived from the incoming request, and callbacks and redirects may not work correctly.
+[Client] [vite] css hot updated: /src/styles.css
+[Client] [vite] css hot updated: /src/styles.css
+[Client] [vite] hot updated: /src/routes/products/new.tsx?tsr-split=component
+[Client] [vite] hot updated: /src/routes/products/index.tsx?tsr-split=component
+[2m10.50.56[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles.css?direct, /src/routes/__root.tsx[22m
+[2m10.50.56[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/styles.css[22m
+[Client] [vite] hot updated: /src/routes/__root.tsx
+[2m2026-11-17T03:50:56.341Z[0m [33mWARN[0m [1m[Better Auth]:[0m [better-auth] Base URL is not set. Set the 
+baseURL option or BETTER_AUTH_URL env, or use a dynamic baseURL with allowedHosts for multi-host setups. Without it 
+the origin is derived from the incoming request, and callbacks and redirects may not work correctly.
+[2m10.50.56[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Server] 
+2026-11-17T03:50:56.341Z WARN [Better Auth]: [better-auth] Base URL is not set. Set the baseURL option or 
+BETTER_AUTH_URL env, or use a dynamic baseURL with allowedHosts for multi-host setups. Without it the origin is 
+derived from the incoming request, and callbacks and redirects may not work correctly.
+[2m10.50.56[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Server] 
+2026-11-17T03:50:56.341Z WARN [Better Auth]: [better-auth] Base URL is not set. Set the baseURL option or 
+BETTER_AUTH_URL env, or use a dynamic baseURL with allowedHosts for multi-host setups. Without it the origin is 
+derived from the incoming request, and callbacks and redirects may not work correctly.
+[2m10.50.56[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Server] 
+2026-11-17T03:50:56.341Z WARN [Better Auth]: [better-auth] Base URL is not set. Set the baseURL option or 
+BETTER_AUTH_URL env, or use a dynamic baseURL with allowedHosts for multi-host setups. Without it the origin is 
+derived from the incoming request, and callbacks and redirects may not work correctly.
+[Client] [vite] css hot updated: /src/styles.css
+[Client] [vite] hot updated: /src/routes/__root.tsx
+[Client] [vite] css hot updated: /src/styles.css
+[Client] [vite] hot updated: /src/routes/__root.tsx
+[Client] [vite] css hot updated: /src/styles.css

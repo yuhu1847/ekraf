@@ -8,7 +8,7 @@ dist-ssr
 .tanstack
 .wrangler
 .output
-.vinxi
+.vinxi/
 __unconfig*
 todos.json
 student-assignment.html

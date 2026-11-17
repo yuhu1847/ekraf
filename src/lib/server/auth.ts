@@ -1,16 +1,24 @@
 import { createServerFn } from "@tanstack/react-start";
 
 import { auth } from "@/lib/auth";
-import { SEED_ADMIN_EMAIL, SEED_ADMIN_PASSWORD, db } from "@/lib/db";
+import { SEED_ADMIN_EMAIL, SEED_ADMIN_PASSWORD, db, getUserRole } from "@/lib/db";
 import { getCurrentSession } from "@/lib/session";
 
 /**
  * Server-only session lookup. Safe to call from TanStack Router `beforeLoad`
  * (which runs on the client during client navigation) because server
  * functions always execute on the server.
+ *
+ * Also returns the caller's role so route guards can gate admin-only screens
+ * before rendering a form that the server would reject anyway.
  */
 export const getServerSession = createServerFn({ method: "GET" }).handler(async () => {
-	return getCurrentSession();
+	const { session, user } = await getCurrentSession();
+	return {
+		session,
+		user,
+		role: user ? getUserRole(user.id) : ("user" as const),
+	};
 });
 
 /**
